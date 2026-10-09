@@ -1,0 +1,7 @@
+timestamp,hostname,username,source_ip,destination_ip,event_type,event_description,process_name,auth_result
+2026-10-09 10:00:01,FINANCE-SRV01,admin,185.220.101.5,10.0.1.50,SSH_LOGIN,Failed password for admin from 185.220.101.5 port 49152 ssh2,/usr/sbin/sshd,FAILURE
+2026-10-09 10:00:15,FINANCE-SRV01,admin,185.220.101.5,10.0.1.50,SSH_LOGIN,Failed password for admin from 185.220.101.5 port 49154 ssh2,/usr/sbin/sshd,FAILURE
+2026-10-09 10:00:29,FINANCE-SRV01,admin,185.220.101.5,10.0.1.50,SSH_LOGIN,Failed password for admin from 185.220.101.5 port 49158 ssh2,/usr/sbin/sshd,FAILURE
+2026-10-09 10:00:45,FINANCE-SRV01,admin,185.220.101.5,10.0.1.50,SSH_LOGIN,Failed password for admin from 185.220.101.5 port 49162 ssh2,/usr/sbin/sshd,FAILURE
+2026-10-09 10:01:05,FINANCE-SRV01,admin,185.220.101.5,10.0.1.50,SSH_LOGIN,Accepted password for admin from 185.220.101.5 port 49170 ssh2,/usr/sbin/sshd,SUCCESS
+2026-10-09 10:01:20,FINANCE-SRV01,admin,185.220.101.5,10.0.1.50,PROCESS_EXEC,whoami /priv,cmd.exe,UNKNOWN

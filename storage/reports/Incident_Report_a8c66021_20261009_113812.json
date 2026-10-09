@@ -1,0 +1,260 @@
+{
+  "platform": "TraceForensics DFIR Platform",
+  "report_generated_at": "2026-10-09T11:38:12.042746+00:00",
+  "generated_by": "analyst",
+  "incident": {
+    "id": "a8c66021-d8e9-488c-aac9-f25c3e93cb29",
+    "title": "Security Incident: Suspicious Activity Detected on User 'admin'",
+    "status": "Open",
+    "severity": "Critical",
+    "created_at": "2026-10-09T11:38:11.969421",
+    "updated_at": "2026-10-09T11:38:11.969421",
+    "description": "Auto-correlated incident derived from 9 alert(s) involving entity User 'admin'. Alerts include: Suspicious Process Command Execution, Repeated Failed Authentication (Brute Force), Successful Authentication Post Repeated Failures, Login Activity from Suspicious External IP",
+    "resolution_notes": null
+  },
+  "alerts": [
+    {
+      "alert_id": "634328ba-7db1-4058-a9d0-0d3805f6b552",
+      "rule_code": "RULE-006",
+      "rule_name": "Login Activity from Suspicious External IP",
+      "severity": "Medium",
+      "confidence": "Medium",
+      "trigger_reason": "Authentication observed from anomalous IP address: 185.220.101.5",
+      "timestamp": "2026-10-09T10:00:01"
+    },
+    {
+      "alert_id": "9ab5c894-184d-4cef-8a5f-2c4b35dc1305",
+      "rule_code": "RULE-006",
+      "rule_name": "Login Activity from Suspicious External IP",
+      "severity": "Medium",
+      "confidence": "Medium",
+      "trigger_reason": "Authentication observed from anomalous IP address: 185.220.101.5",
+      "timestamp": "2026-10-09T10:00:15"
+    },
+    {
+      "alert_id": "f5f0fd41-a52f-4032-994e-13952d375fa0",
+      "rule_code": "RULE-006",
+      "rule_name": "Login Activity from Suspicious External IP",
+      "severity": "Medium",
+      "confidence": "Medium",
+      "trigger_reason": "Authentication observed from anomalous IP address: 185.220.101.5",
+      "timestamp": "2026-10-09T10:00:29"
+    },
+    {
+      "alert_id": "c61f9e5b-2171-433f-8b28-ac7721984a87",
+      "rule_code": "RULE-006",
+      "rule_name": "Login Activity from Suspicious External IP",
+      "severity": "Medium",
+      "confidence": "Medium",
+      "trigger_reason": "Authentication observed from anomalous IP address: 185.220.101.5",
+      "timestamp": "2026-10-09T10:00:45"
+    },
+    {
+      "alert_id": "11817545-a293-4858-8c44-de0fed095257",
+      "rule_code": "RULE-006",
+      "rule_name": "Login Activity from Suspicious External IP",
+      "severity": "Medium",
+      "confidence": "Medium",
+      "trigger_reason": "Authentication observed from anomalous IP address: 185.220.101.5",
+      "timestamp": "2026-10-09T10:01:05"
+    },
+    {
+      "alert_id": "e00159ec-fe35-4bb2-97a8-45c59fccc460",
+      "rule_code": "RULE-003",
+      "rule_name": "Suspicious Process Command Execution",
+      "severity": "High",
+      "confidence": "Medium",
+      "trigger_reason": "Suspicious process or command execution detected: cmd.exe",
+      "timestamp": "2026-10-09T10:01:20"
+    },
+    {
+      "alert_id": "25731af9-b239-4bdc-a376-b92888f1d8a4",
+      "rule_code": "RULE-006",
+      "rule_name": "Login Activity from Suspicious External IP",
+      "severity": "Medium",
+      "confidence": "Medium",
+      "trigger_reason": "Authentication observed from anomalous IP address: 185.220.101.5",
+      "timestamp": "2026-10-09T10:01:20"
+    },
+    {
+      "alert_id": "6f70f0ba-acd1-409b-bd50-9ab38b8d574a",
+      "rule_code": "RULE-001",
+      "rule_name": "Repeated Failed Authentication (Brute Force)",
+      "severity": "High",
+      "confidence": "High",
+      "trigger_reason": "Multiple failed authentication attempts (3) for user 'admin' within 15 minutes.",
+      "timestamp": "2026-10-09T10:00:29"
+    },
+    {
+      "alert_id": "f965df85-c4e7-4ad1-aa40-ff64c10f65a7",
+      "rule_code": "RULE-002",
+      "rule_name": "Successful Authentication Post Repeated Failures",
+      "severity": "Critical",
+      "confidence": "High",
+      "trigger_reason": "Successful login for user 'admin' following 4 recent authentication failures.",
+      "timestamp": "2026-10-09T10:01:05"
+    }
+  ],
+  "timeline_events": [
+    {
+      "event_id": "45e1ee94-d9b9-49b1-aa00-62d943f17d8d",
+      "timestamp": "2026-10-09T10:00:01",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49152 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "45e1ee94-d9b9-49b1-aa00-62d943f17d8d",
+      "timestamp": "2026-10-09T10:00:01",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49152 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "45e1ee94-d9b9-49b1-aa00-62d943f17d8d",
+      "timestamp": "2026-10-09T10:00:01",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49152 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "3e47769f-c941-4ed6-b1db-36e56873a29e",
+      "timestamp": "2026-10-09T10:00:15",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49154 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "3e47769f-c941-4ed6-b1db-36e56873a29e",
+      "timestamp": "2026-10-09T10:00:15",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49154 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "3e47769f-c941-4ed6-b1db-36e56873a29e",
+      "timestamp": "2026-10-09T10:00:15",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49154 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "173a931b-1d44-4051-a162-8232efa98340",
+      "timestamp": "2026-10-09T10:00:29",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49158 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "173a931b-1d44-4051-a162-8232efa98340",
+      "timestamp": "2026-10-09T10:00:29",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49158 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "173a931b-1d44-4051-a162-8232efa98340",
+      "timestamp": "2026-10-09T10:00:29",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49158 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "b260f3d3-b53a-41f4-9438-f768a6003db1",
+      "timestamp": "2026-10-09T10:00:45",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49162 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "b260f3d3-b53a-41f4-9438-f768a6003db1",
+      "timestamp": "2026-10-09T10:00:45",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Failed password for admin from 185.220.101.5 port 49162 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "FAILURE"
+    },
+    {
+      "event_id": "53ae97ac-bc73-445a-bda1-ef10757123f9",
+      "timestamp": "2026-10-09T10:01:05",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Accepted password for admin from 185.220.101.5 port 49170 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "SUCCESS"
+    },
+    {
+      "event_id": "53ae97ac-bc73-445a-bda1-ef10757123f9",
+      "timestamp": "2026-10-09T10:01:05",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "SSH_LOGIN",
+      "event_description": "Accepted password for admin from 185.220.101.5 port 49170 ssh2",
+      "process_name": "/usr/sbin/sshd",
+      "auth_result": "SUCCESS"
+    },
+    {
+      "event_id": "4eded9e6-b6b3-41cb-b464-3ac365c762c5",
+      "timestamp": "2026-10-09T10:01:20",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "PROCESS_EXEC",
+      "event_description": "whoami /priv",
+      "process_name": "cmd.exe",
+      "auth_result": "UNKNOWN"
+    },
+    {
+      "event_id": "4eded9e6-b6b3-41cb-b464-3ac365c762c5",
+      "timestamp": "2026-10-09T10:01:20",
+      "hostname": "FINANCE-SRV01",
+      "username": "admin",
+      "event_type": "PROCESS_EXEC",
+      "event_description": "whoami /priv",
+      "process_name": "cmd.exe",
+      "auth_result": "UNKNOWN"
+    }
+  ],
+  "evidence_integrity": [
+    {
+      "filename": "Synthetic_brute_force_attack.csv",
+      "sha256_hash": "716f1a198389e235a8a85e4bd3310251816e1f53f01a3e3c5a32a65240f129ca",
+      "line_count": 6,
+      "acquisition_time": "2026-10-09T11:38:11.931503"
+    }
+  ],
+  "analyst_notes": [],
+  "disclaimer": "This report is generated by TraceForensics rule-based detection engine and analyst documentation. Hash verification and log entries alone do not constitute tamper-proof legal chain of custody."
+}

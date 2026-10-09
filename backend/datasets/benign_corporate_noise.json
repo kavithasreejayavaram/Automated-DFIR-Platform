@@ -1,0 +1,35 @@
+[
+  {
+    "timestamp": "2026-10-09T08:00:00Z",
+    "hostname": "HR-DESKTOP-12",
+    "username": "alice_hr",
+    "source_ip": "10.0.2.14",
+    "destination_ip": "10.0.1.5",
+    "event_type": "4624",
+    "event_description": "User login success for daily workstation session",
+    "process_name": "explorer.exe",
+    "auth_result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-10-09T08:15:22Z",
+    "hostname": "HR-DESKTOP-12",
+    "username": "alice_hr",
+    "source_ip": "10.0.2.14",
+    "destination_ip": "10.0.1.100",
+    "event_type": "HTTP_REQUEST",
+    "event_description": "GET /intranet/hr-portal/index.html HTTP/1.1",
+    "process_name": "chrome.exe",
+    "auth_result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-10-09T09:30:10Z",
+    "hostname": "DEV-LAPTOP-88",
+    "username": "bob_dev",
+    "source_ip": "10.0.3.50",
+    "destination_ip": "10.0.1.5",
+    "event_type": "SSH_LOGIN",
+    "event_description": "Accepted publickey for bob_dev from 10.0.3.50 port 50212 ssh2",
+    "process_name": "sshd",
+    "auth_result": "SUCCESS"
+  }
+]

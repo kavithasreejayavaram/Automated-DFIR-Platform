@@ -1,0 +1,4 @@
+timestamp,hostname,username,source_ip,destination_ip,event_type,event_description,process_name,auth_result
+2026-10-09 11:30:00,DC01-WIN,svc_backup,10.0.1.20,10.0.1.10,4624,Successful logon for backup service account,lsass.exe,SUCCESS
+2026-10-09 11:30:15,DC01-WIN,svc_backup,10.0.1.20,10.0.1.10,4728,A member was added to a security-enabled global group Domain Admins,net.exe,SUCCESS
+2026-10-09 11:30:30,DC01-WIN,svc_backup,10.0.1.20,10.0.1.10,LOG_CLEARED,The Security event log was cleared by user svc_backup (EventID 1102),wevtutil.exe,UNKNOWN
